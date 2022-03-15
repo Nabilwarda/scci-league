@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+    background: linear-gradient(rgba(1, 0, 54, 0.596), rgba(122, 122, 122, 0.6)), url(../img/Screen.png);
+background-repeat: no-repeat;
+background-size: cover;
+  }
+  
+/* start nav */
+nav{
+    background-color: #000042;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 5px 20px black;
+    font-family: 'Raleway', sans-serif;
+    position:sticky !important;
+    margin-bottom: 10px;
+}
+#navlink{
+    color: #D1D1D1;
+    font-size: 20px;
+}
+#navlink:hover{
+    color: #ff0000;
+    text-shadow: 2px 2px 15px rgb(121, 0, 0);
+    font-size: 20px;
+}
+/* end nav */
+.h,.hh{
+    color: crimson;
+    background-color: darkblue;
+    border-radius: 0 50px  ;
+    width: 350px;
+    transition: all 1.5s;
+    font-weight: 500 !important;
+}
+  .h{
+      height:70px ;
+  }
+   .hh{
+       width:70%;  
+        
+        animation-name: example;
+       animation-duration: 2s; 
+       animation-iteration-count: infinite;
+       font-weight: 800;
+    }
+    @keyframes example {
+      from{color:crimson;}
+      to {color: whitesmoke}
+   }
+
+.h:hover{
+  border-radius: 30px ;
+  color: darkblue;
+  background-color: crimson;
+}
+.hh:hover{
+  border-radius: 30px ;
+  color: darkblue;
+  background-color: crimson;
+}
+.pp{
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    height: 236px;
+    background-color: white;
+    opacity: 0.7;
+    box-shadow: 6px 6px 20px black;
+    border-radius: 50px;
+    padding: 5px 15px 0;
+    
+
+}
+p{
+    font-weight: 500;
+    font-size: 15px;
+    
+} @media (min-width: 600px) {
+    .h {
+         width: 320px;
+      font-size: x-large; 
+       font-weight: 700 !important;
+      }
+    
+      }@media (max-width: 600px) {
+       .h{
+             width: 250px ;
+             font-weight: 700 !important;
+          }
+      }
+      @media (min-width: 1200px) {
+    .h {
+         width: 460px; 
+         font-size: 32px;
+          font-weight: 700 !important;
+    }
+}   
+/* start cards */
+.cont {
+ display: flex;
+ flex-direction: row;
+flex-wrap: wrap;
+ justify-content: space-evenly;
+ align-items: center;
+ gap: 10px;
+ margin-top: 5px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 88%;
+ background-color: white;
+ opacity: 0.8;
+ box-shadow: 6px 6px 20px black;
+ border-radius: 50px;
+padding: 5px 15px 0;
+overflow: hidden;
+    }
+.team-name{
+ color: crimson;
+background-color: darkblue;
+ border-radius:0 0 50px 50px;
+ width: 40%;
+  }
+ .table{   height: 300px !important;
+ width:auto !important;
+ border-collapse: collapse;
+  width: 100%;
+    }
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+ padding: 8px;
+ }
+          
+tr:nth-child(even) {
+background-color: #dddddd;
+  }
+    .car{
+ background-color: white;
+     box-shadow: 6px 6px 20px black;
+    border-radius:  50px;
+     padding: 5px 15px 0;
+     overflow: hidden;
+    }
+    /* start fr */
+    .fr{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 88%;
+        height: 236px;
+        background-color: white;
+        opacity: 0.7;
+        box-shadow: 6px 6px 20px black;
+        border-radius: 50px;
+        padding: 5px 15px 0;
+        margin-bottom: 10px;
+    }
+    .im{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: gray;
+    }
+/* start footer */
+.site-footer{
+    background-color: #000690;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#D1D1D1;
+  }
+  .site-footer hr
+  {
+    border-top-color:#D1D1D1;
+    opacity:0.5
+  }
+  .site-footer hr.small
+  {
+    margin:20px 0
+  }
+  .site-footer h6
+  {
+    color:#d1d1d1;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+  }
+  .site-footer a
+  {
+    color:#D1D1D1;
+  }
+  .site-footer a:hover
+  {
+    color: #ff0000;
+    text-shadow: 2px 2px 15px rgb(121, 0, 0);
+    text-decoration:none;
+  }
+  .footer-links
+  {
+    padding-left:0;
+    list-style:none
+  }
+  .footer-links li
+  {
+    display:block
+  }
+  .footer-links a
+  {
+    color:#d1d1d1
+  }
+  .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+  {
+    color: #ff0000;
+    text-shadow: 2px 2px 15px rgb(121, 0, 0);
+    text-decoration:none;
+  }
+  .footer-links.inline li
+  {
+    display:inline-block
+  }
+  .site-footer .social-icons
+  {
+    text-align:right
+  }
+  .site-footer .social-icons a
+  {
+    width:70px;
+    height:70px;
+    line-height:70px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#ffffff
+  }
+  .copyright-text
+  {
+    margin:0
+  }
+  @media (max-width:991px)
+  {
+    .site-footer [class^=col-]
+    {
+      margin-bottom:30px
+    }
+  }
+  @media (max-width:767px)
+  {
+    .site-footer
+    {
+      padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+      text-align:center
+    }
+  }
+  .social-icons
+  {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+  }
+  .social-icons li
+  {
+    display:inline-block;
+    margin-bottom:4px;
+  }
+  .social-icons a{
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+    color:#fff;
+    background-color:#29aafe
+  }
+  .social-icons.size-sm a
+  {
+    line-height:34px;
+    height:34px;
+    width:34px;
+  }
+  .social-icons a.facebook:hover
+  {
+    background-color: blue;
+  }
+  .social-icons a.instagram:hover
+  {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  }
+  .social-icons a.youtube:hover
+  {
+    background-color: red;
+  }
+  .social-icons a.gmail:hover
+  {
+    background: #fff;
+  }
+  @media (max-width:767px)
+  {
+    .social-icons li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
+  }
